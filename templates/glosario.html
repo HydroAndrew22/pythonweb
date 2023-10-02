@@ -2,7 +2,91 @@
 
 {% block content %}
 
-<div class="accordion" id="accordionExample">
+
+
+<div class="contenedor-acordeon">
+  <h2>Glosario</h2>
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+    <label for="btn-acordeon1"> 
+      Tutorial
+    </label>
+    <div class="contenido-acordeon">
+      <strong>Web Python: </strong> <code> https://www.youtube.com/watch?v=fxavwHPJ36o </code>
+      <br><strong>Acordeon: </strong> <code> https://www.youtube.com/watch?v=_cmqqZRGcC4 </code>
+      <br><strong>LoginPHP: </strong> <code> https://www.youtube.com/watch?v=kfDI2V-Vaik&t=812s </code>
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+    <label for="btn-acordeon2"> 
+      Hosting
+    </label>
+    <div class="contenido-acordeon">
+      <!-- <a href="https://www.heroku.com/"> https://www.heroku.com/</a> y https://devcenter.heroku.com/articles/heroku-cli -->
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+    <label for="btn-acordeon3"> 
+      Bootstrap
+    </label>
+    <div class="contenido-acordeon">
+      <code> https://getbootstrap.com/docs/5.3/components/accordion/</code> 
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+    <label for="btn-acordeon4"> 
+      Icon
+    </label>
+    <div class="contenido-acordeon">
+      <code>https://icons.getbootstrap.com/icons/xbox/</code>
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+    <label for="btn-acordeon5"> 
+      Gunicorn
+    </label>
+    <div class="contenido-acordeon">
+      <code>https://gunicorn.org/</code>
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+    <label for="btn-acordeon6"> 
+      GIT
+    </label>
+    <div class="contenido-acordeon">
+      <code>https://gunicorn.org/</code>
+    </div>
+  </div>
+
+  <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon7" class="btn-acordeon">
+    <label for="btn-acordeon7"> 
+      Entorno virtual
+    </label>
+    <div class="contenido-acordeon">
+      <code>pip install virtualenv</code>  crearlo  <code>python -m venv venv</code>
+    </div>
+  </div>
+  </div>
+  
+</div>
+
+
+
+
+<!-- 
+
+  <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -91,7 +175,10 @@
 
   </div>
 
+ 
+-->
 
 {% endblock %}
+
 
 

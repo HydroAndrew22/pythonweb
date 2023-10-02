@@ -7,3 +7,68 @@ body {
     background: linear-gradient(to right, #4CA1AF, #2C3E50);    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;   
+}
+
+.contenedor-acordeon h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.acordeon{
+    background: #fff; /* Separadores entre opciones */
+}
+
+.acordeon label{
+    display: block;             /* bloque */
+    padding: 20px;              /* Relleno */
+    font-size: 20px;             /* Tamaño letra */
+    background: #1c1c1c;       /* Fondo*/
+    color: #fff;             /* Color texto*/
+    cursor: pointer;             /* el mouse se cambie a una manito */
+    margin-bottom: 2px;             /* borde */
+    transition: all 300ms ease;     /* efecto */
+
+}
+
+.acordeon label:hover{     /* efecto pase el mouse por encima cambie de color */
+    background: #2e2e2e;
+}
+
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin:  0px 20px;     /* 0 arriba 20 abajo */
+    max-height:  0px;     /* alto */
+    overflow: hidden;     /* para que oculte el contenido */
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height:  600px;
+    padding:  15px 0px;     /* alto  - costado*/
+}
+
+.btn-acordeon{     /* oculta el boton*/
+    display: none;
+}
+
+@media screen and (max-width:900px){      /* responsive en tablets a dispositivos*/
+    .contenedor-acordeon{
+        width: 90px;
+    }
+}
